@@ -109,5 +109,5 @@ create_signed_pdf('input/original.pdf', 'output/signed.pdf', qr_pdf)
 
 elapsed_time = time.time() - start_time
 mem_usage = process.memory_info().rss
-logging.info(f"Executed in {elapsed_time:.4f}s")
+logging.info(f"Executed in {elapsed_time:.3f}s")
 logging.info(f"Memory usage: {mem_usage/ (1024 * 1024):.2f}mb")
